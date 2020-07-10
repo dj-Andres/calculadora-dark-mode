@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora|DJ</title>
+    <link rel="stylesheet" href="css/estilos.css" id="tema">
+    <!---Tipografia-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+        <center>
+            <div class="container">
+                <h1>Calculadora</h1>
+                <div class="primera-fila">
+                    <input type="text" name="resultado" class="resultado" id="resultado" value="" placeholder="Resultado" readonly>
+                    <input type="button" value="C" onclick="limpiar()" class="limpiar">
+                </div>
+                <div class="segunda-fila">
+                    <input type="button" value="1" onclick="envivo(1)" id="uno">
+                    <input type="button" value="2" onclick="envivo(2)" id="dos">
+                    <input type="button" value="3" onclick="envivo(3)" id="tres">
+                    <input type="button" value="+" onclick="envivo('+')">
+                </div>
+                <div class="tercera-fila">
+                    <input type="button" value="4" onclick="envivo(4)" id="cuatro">
+                    <input type="button" value="5" onclick="envivo(5)" id="cinco">
+                    <input type="button" value="6" onclick="envivo(6)" id="seis">
+                    <input type="button" value="-" onclick="envivo('-')">
+                </div>
+                <div class="cuarta-fila">
+                    <input type="button" value="7" onclick="envivo(7)" id="siete">
+                    <input type="button" value="8" onclick="envivo(8)" id="ocho">
+                    <input type="button" value="9" onclick="envivo(9)" id="nueve">
+                    <input type="button" value="x" onclick="envivo('*')">
+                </div>
+                <div class="quinta-fila">
+                    <input type="button" value="/" onclick="envivo('/')">
+                    <input type="button" value="0" id="cero" onclick="envivo(0)">
+                    <input type="button" value="." class="dot" onclick="envivo('.')">
+                    <input type="button" value="=" onclick="resultado.value=eval(resultado.value)">
+                </div>
+                <div class="boton-botones">
+                    <button>
+                        <i class="fab fa-github"></i>
+                        <a href="">GitHub</a>
+                    </button>
+                    <button onclick="cambio_tema()" id="modo-oscuro">
+                         Mode Oscuro 🌙
+                    </button>
+                </div>
+            </div>
+        </center>
+    <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
